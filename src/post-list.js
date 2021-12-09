@@ -47,7 +47,9 @@ export default class PostComponent extends React.Component {
                   {items.map((result,index) => (
 
                       <div className="card my-4 text-left" key={index} >
-                          <div className="card-header ">{index+1}. {result.title}</div>
+                          <div className="card-header ">
+                            <h6>{index+1}. {result.title}</h6>
+                          </div>
                           <div className="card-body"> {result.body}</div>
                       </div>
 
